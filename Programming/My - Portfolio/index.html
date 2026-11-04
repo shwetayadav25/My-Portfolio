@@ -1,155 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Shweta Yadav | Portfolio</title>
-
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <!-- Navigation -->
-    <header>
-        <nav>
-            <h2>Shweta Yadav</h2>
-
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
     <!-- Home Section -->
-    <section id="home" class="hero">
+    <div class="card" id="home">
 
-        <div class="hero-text">
+        <img src="profile.jpg" alt="Shweta Profile" class="profile-img">
 
-            <h1>Hello, I'm <span>Shweta Yadav</span></h1>
+        <h1>Hello, I'm Shweta Yadav</h1>
 
-            <h2>Future Software Engineer 💻</h2>
+        <h2>Future Software Engineer</h2>
 
-            <p>
-                I am a Computer Science student passionate about
-                coding, technology and learning new skills.
-            </p>
+        <p>Welcome to my personal portfolio website!</p>
 
-            <a href="#about" class="btn">Explore More</a>
+        <button onclick="welcomeMessage()">
+            Click Me!
+        </button>
 
-        </div>
+        <p id="message"></p>
 
-        <!-- Profile Photo -->
-        <div class="profile-box">
-
-            <img src="profile.jpg"
-                 alt="Shweta Yadav"
-                 class="profile-img"
-                 style="width: 240px; height: 240px; object-fit: cover; border-radius: 50%;">
-
-        </div>
-
-    </section>
+    </div>
 
     <!-- About Section -->
-    <section id="about">
+    <div class="card" id="about">
 
         <h2>About Me</h2>
 
-        <p>
-            Hello! I am Shweta Yadav, a passionate
-            Computer Science student pursuing my 2nd year BCS.
+        <p>I am pursuing 2nd Year BCS Computer Science.</p>
 
-            I enjoy learning programming, developing websites
-            and exploring new technologies.
-
-            I have basic knowledge of HTML, CSS, C, C++,
-            Python and SQL.
-
-            My goal is to become a skilled Software Engineer
-            and build useful real-world applications.
-        </p>
-
-    </section>
+    </div>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <div class="card" id="skills">
 
         <h2>My Skills</h2>
 
-        <div class="skills-container">
+        <p>HTML, CSS, C, C++, Python and SQL</p>
 
-            <div class="skill-card">HTML</div>
-
-            <div class="skill-card">CSS</div>
-
-            <div class="skill-card">C Programming</div>
-
-            <div class="skill-card">C++</div>
-
-            <div class="skill-card">Python</div>
-
-            <div class="skill-card">SQL</div>
-
-        </div>
-
-    </section>
+    </div>
 
     <!-- Projects Section -->
-    <section id="projects">
+    <div class="card" id="projects">
 
         <h2>My Projects</h2>
 
-        <div class="project-card">
+        <div class="project-container">
 
-            <h3>Blood Donor Management System</h3>
+            <!-- Project 1 -->
+            <div class="project-card">
 
-            <p>
-                A mini project developed to connect blood donors
-                with patients who need blood in emergencies.
-            </p>
+                <h3>Blood Donor Management System</h3>
 
-            <h4>Technologies Used</h4>
+                <p>
+                    A website designed to connect blood donors
+                    with patients who need blood.
+                </p>
 
-            <div class="tech-list">
-                <span>HTML</span>
-                <span>CSS</span>
+                <p>
+                    Technologies: HTML, CSS, JavaScript
+                </p>
+
             </div>
 
-            <h4>Key Features</h4>
+            <!-- Project 2 -->
+            <div class="project-card">
 
-            <ul>
-                <li>Donor Registration</li>
-                <li>Patient Registration</li>
-                <li>Blood Group Selection</li>
-                <li>Location-Based Donor Search</li>
-            </ul>
+                <h3>My Personal Portfolio Website</h3>
+
+                <p>
+                    A personal website created using
+                    HTML, CSS and JavaScript.
+                </p>
+
+                <p>
+                    Technologies: HTML, CSS, JavaScript
+                </p>
+
+            </div>
 
         </div>
 
-    </section>
+    </div>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <div class="card" id="contact">
 
         <h2>Contact Me</h2>
 
-        <p>Email: your-email@example.com</p>
+        <p>Email: Your Email Address</p>
 
-    </section>
+    </div>
 
-    <!-- Footer -->
-    <footer>
-
-        <p>© 2026 Shweta Yadav | Future Software Engineer</p>
-
-    </footer>
+    <!-- JavaScript Connection -->
+    <script src="script.js"></script>
 
 </body>
 </html>
