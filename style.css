@@ -1,51 +1,62 @@
-/* General Styling */
+/* GENERAL STYLING */
+* {
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
 
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
     background: linear-gradient(135deg, #050510, #171044, #09091a);
     color: white;
     text-align: center;
 }
 
-/* Navigation Bar */
-
+/* NAVIGATION */
 nav {
-    padding: 20px;
-    background: #080817;
-    border-bottom: 1px solid purple;
+    padding: 22px 10px;
+    background: rgba(8, 8, 23, 0.95);
+    border-bottom: 1px solid #a020f0;
+    position: sticky;
+    top: 0;
+    z-index: 100;
 }
 
 nav a {
-    color: #b58cff;
+    color: #c9a5ff;
     text-decoration: none;
     margin: 15px;
     font-weight: bold;
+    transition: 0.3s;
 }
 
 nav a:hover {
     color: #ff80df;
 }
 
-/* Main Card */
-
+/* MAIN CARD */
 .card {
-    width: 60%;
-    max-width: 600px;
+    width: 85%;
+    max-width: 750px;
     margin: 50px auto;
-    padding: 30px;
+    padding: 40px 30px;
     background: linear-gradient(135deg, #10103a, #29205c);
-    border: 2px solid #a020f0;
-    border-radius: 20px;
-    box-shadow: 0 0 20px purple;
+    border: 1px solid #a020f0;
+    border-radius: 25px;
+    box-shadow: 0 0 25px rgba(160, 32, 240, 0.3);
+    transition: 0.3s;
 }
 
-/* Headings */
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 35px rgba(255, 77, 225, 0.4);
+}
 
+/* HEADINGS */
 h1 {
-    color: #b58cff;
-    font-size: 35px;
+    color: #c9a5ff;
+    font-size: 38px;
 }
 
 h2 {
@@ -57,44 +68,44 @@ h3 {
     margin-top: 25px;
 }
 
-/* Paragraph */
-
+/* PARAGRAPH */
 p {
     font-size: 16px;
-    line-height: 1.5;
+    line-height: 1.8;
+    color: #ddddf5;
 }
 
-/* Profile Image */
-
+/* PROFILE IMAGE */
 .profile-img {
-    width: 100px;
-    height: 100px;
+    width: 140px;
+    height: 140px;
     border-radius: 50%;
     object-fit: cover;
     display: block;
-    margin: 10px auto;
-    border: 3px solid white;
-    box-shadow: 0 0 15px purple;
+    margin: 20px auto;
+    border: 4px solid #c9a5ff;
+    box-shadow: 0 0 25px #a020f0;
 }
 
-/* Button */
-
+/* BUTTON */
 button {
-    background: purple;
+    background: linear-gradient(90deg, purple, #ff4de1);
     color: white;
-    padding: 12px 25px;
+    padding: 13px 30px;
     border: none;
-    border-radius: 20px;
+    border-radius: 25px;
     cursor: pointer;
     font-size: 16px;
+    font-weight: bold;
+    transition: 0.3s;
 }
 
 button:hover {
-    background: #ff4de1;
+    transform: scale(1.05);
+    box-shadow: 0 0 20px #ff4de1;
 }
 
-/* Technical Skills Progress Bars */
-
+/* SKILL BARS */
 .skill-bar {
     width: 100%;
     height: 20px;
@@ -114,40 +125,49 @@ button:hover {
     border-radius: 20px;
 }
 
-/* Skill Percentages */
+/* SKILL PERCENTAGES */
+.html { width: 70%; }
+.css { width: 50%; }
+.c { width: 60%; }
+.cpp { width: 50%; }
+.python { width: 40%; }
 
-.html {
-    width: 70%;
+/* LINKS */
+a {
+    transition: 0.3s;
 }
 
-.css {
-    width: 50%;
+/* FOOTER */
+footer {
+    padding: 20px;
+    background: #080817;
+    color: #c9a5ff;
+    margin-top: 40px;
 }
 
-.c {
-    width: 60%;
-}
-
-.cpp {
-    width: 50%;
-}
-
-.python {
-    width: 40%;
-}
-
-/* Mobile Responsive */
-
+/* MOBILE RESPONSIVE */
 @media (max-width: 600px) {
-
     .card {
-        width: 85%;
-        padding: 15px;
+        width: 92%;
+        padding: 20px 15px;
+    }
+
+    nav {
+        padding: 15px 5px;
     }
 
     nav a {
-        margin: 5px;
+        display: inline-block;
+        margin: 7px;
         font-size: 12px;
     }
 
+    h1 {
+        font-size: 28px;
+    }
+
+    .profile-img {
+        width: 120px;
+        height: 120px;
+    }
 }
